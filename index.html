@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Define que el documento es HTML5 -->
+<html lang="es">
+<!-- Especifica que el idioma del contenido es español -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Asegura una visualización adecuada y una escala inicial en dispositivos móviles -->
+    <title>Kirby - Animado</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Vincula el archivo de estilos CSS externo -->
+    <link rel="icon" type="image/x-icon" href="/img/Kirby_Icon.png">
+    <!-- Icono de la página que aparece en la pestaña del navegador -->
+</head>
+<body>
+    <audio id="musicaDeFondo" src="/sound/kirby1.mp3" autoplay loop>
+        Tu navegador no soporta el elemento de audio.
+        <!-- Etiqueta de audio que reproduce música de fondo automáticamente y en bucle -->
+    </audio>
+
+    <!-- Tres divs que representan nubes en la animación -->
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+
+    <!-- Div contenedor principal de Kirby -->
+    <div class="kirby">
+        <!-- Ojos de Kirby, cada uno compuesto por tres capas para dar profundidad -->
+        <div class="eye">
+            <div class="eye1">
+                <div class="eye2"></div>
+            </div>
+        </div>
+        <div class="eye">
+            <div class="eye1">
+                <div class="eye2"></div>
+            </div>
+        </div>
+        
+        <!-- Boca de Kirby, con una subcapa para el detalle -->
+        <div class="mouth">
+            <div class="mouth1"></div>
+        </div>
+        
+        <!-- Detalles decorativos en Kirby -->
+        <div class="dt1"></div>
+        <div class="dt2"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Vincula el archivo JavaScript que contiene la lógica del juego o animación -->
+</body>
+<!-- Esta etiqueta cierra el <body>, que es donde termina el contenido visible de la página. -->
+</html>
+<!-- Esta etiqueta cierra el documento HTML. -->
